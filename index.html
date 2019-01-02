@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>Verteiler</title>
     <style>
     body {
   background-color: #221F1F;
@@ -27,8 +28,8 @@ img {
 }
 </style>
     </head>
-<body bgcolor="#221F1F">
-
+<body bgcolor="#221F1F" onload="openFullscreen();">
+<!button onclick="openFullscreen();">Test</button>
 
 <div class="container4">
 <a href="netflix.com/browse"><IMG class="displayed" src="netflix.png" alt="Netflix" href="netflix.com/browse"></a>
@@ -37,6 +38,35 @@ img {
 <a href="youtube.com"><IMG class="displayed" src="youtube.png" alt="Youtube" href="youtube.com"></a>
     </div>
 
+<script>
+/* Get the documentElement (<html>) to display the page in fullscreen */
+var elem = document.documentElement;
 
+/* View in fullscreen */
+function openFullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.mozRequestFullScreen) { /* Firefox */
+    elem.mozRequestFullScreen();
+  } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE/Edge */
+    elem.msRequestFullscreen();
+  }
+}
+
+/* Close fullscreen */
+function closeFullscreen() {
+  if (document.exitFullscreen) {
+    document.exitFullscreen();
+  } else if (document.mozCancelFullScreen) { /* Firefox */
+    document.mozCancelFullScreen();
+  } else if (document.webkitExitFullscreen) { /* Chrome, Safari and Opera */
+    document.webkitExitFullscreen();
+  } else if (document.msExitFullscreen) { /* IE/Edge */
+    document.msExitFullscreen();
+  }
+}
+</script>
 </body>
 </html>
