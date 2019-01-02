@@ -49,17 +49,32 @@ img {
     max-width: 125%;
     max-height: 125%;
 }
+        table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #221F1F;
+  text-align: center;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #221F1F;
+}
 </style>
     </head>
 <body bgcolor="#221F1F" onload="openFullscreen()">
 
 
-<a href="https://netflix.com/browse" id="test1"><div class="container5" href="https://netflix.com/browse">
-<IMG class="displayed" src="netflix.png" alt="Netflix" href="https://netflix.com/browse"></a>
-
-</div><a href="https://youtube.com" id="test2"><div class="container4" href="https://youtube.com">
-<IMG class="displayed" src="youtube.png" alt="Youtube" href="https://youtube.com" id="test2"></a>
-    </div>
+<table>
+  <tr>
+    <th><center><a href="https://netflix.com/browse"><IMG class="displayed" src="netflix.png" alt="Netflix" href="https://netflix.com/browse"></a></th>
+    <th><center><a href="https://youtube.com"><IMG class="displayed" src="youtube.png" alt="Youtube" href="https://youtube.com"></a></th>
+  </tr>
+</table>
 
 <!--script>
 /* Get the documentElement (<html>) to display the page in fullscreen */
