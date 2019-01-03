@@ -47,39 +47,9 @@ th {
   </tr>
   <tr>
     <th><center><a href="https://tvthek.orf.at"><IMG id="dingbottom" class="displayed" src="orf.png" alt="ORF" href="https://tvthek.orf.at"></a></th>
-    <th><center><a href=""><IMG id="dingbottom" class="displayed" src="leer.png" alt="Leer" href=""></a></th>
+    <!--th><center><a href=""><IMG id="dingbottom" class="displayed" src="leer.png" alt="Leer" href=""></a></th-->
+    <th><center><a href="https://s.to"><IMG id="dingbottom" class="displayed" src="sto.png" alt="STO" href="https://s.to"></a></th>
   </tr>
 </table>
-        <button onclick="openFullscreen()" id="neuladen">F11</button>
-<script>
-/* Get the documentElement (<html>) to display the page in fullscreen */
-var elem = document.documentElement;
-
-/* View in fullscreen */
-function openFullscreen() {
-  if (elem.requestFullscreen) {
-    elem.requestFullscreen();
-  } else if (elem.mozRequestFullScreen) { /* Firefox */
-    elem.mozRequestFullScreen();
-  } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
-    elem.webkitRequestFullscreen();
-  } else if (elem.msRequestFullscreen) { /* IE/Edge */
-    elem.msRequestFullscreen();
-  }
-}
-
-/* Close fullscreen */
-function closeFullscreen() {
-  if (document.exitFullscreen) {
-    document.exitFullscreen();
-  } else if (document.mozCancelFullScreen) { /* Firefox */
-    document.mozCancelFullScreen();
-  } else if (document.webkitExitFullscreen) { /* Chrome, Safari and Opera */
-    document.webkitExitFullscreen();
-  } else if (document.msExitFullscreen) { /* IE/Edge */
-    document.msExitFullscreen();
-  }
-}
-</script>
 </body>
 </html>
